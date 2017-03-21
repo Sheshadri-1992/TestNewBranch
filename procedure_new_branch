@@ -1,0 +1,15 @@
+git checkout -b "MyCoolBranch" // new branch that you want to work on, creates locally
+git push origin MyCoolBranch // creates the new branch and pushes it into the git
+git remote add -f master https://github.com/Sheshadri-1992/TestNewBranch // adds the remote
+cat > apprehensive //the new files that you created here
+git add ./apprehensive 
+git commit -m "Shesh" ./apprehensive //commit on the newly created file in the new branch
+git push https://github.com/Sheshadri-1992/TestNewBranch MyCoolBranch // pushing the changes to new branch
+
+git checkout master // to change to the master branch
+git merge MyCoolBranch // to get all the changes the new branch has made
+
+//to delete the new branch
+git branch -d MyCoolBranch
+
+More on this : https://www.atlassian.com/git/tutorials/git-merge
